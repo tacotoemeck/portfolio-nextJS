@@ -1,0 +1,10 @@
+.carousel {
+  @apply inline-flex overflow-x-scroll w-full;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
