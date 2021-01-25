@@ -8,7 +8,7 @@ const ExperiencePage = () => {
     <BaseLayout>
       <div className="md:py-12">
         {experience.map((exp) => (
-          <ExperienceTile {...exp} />
+          <ExperienceTile key={exp.company} {...exp} />
         ))}
       </div>
     </BaseLayout>

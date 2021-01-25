@@ -11,7 +11,7 @@ export default [
   },
   {
     screenshotsFirst: false,
-    company: 'MatchPint',
+    company: 'MatchPintss',
     screenshoots: ['/img/1.png', '/img/2.png', '/img/3.png'],
     role: 'Frontend Developer',
     type: 'Full time',
@@ -21,7 +21,7 @@ export default [
   },
   {
     screenshotsFirst: true,
-    company: 'MatchPint',
+    company: 'MatchPintsss',
     screenshoots: ['/img/1.png', '/img/2.png', '/img/3.png'],
     role: 'Frontend Developer',
     type: 'Full time',
@@ -31,7 +31,7 @@ export default [
   },
   {
     screenshotsFirst: false,
-    company: 'MatchPint',
+    company: 'MatchPintddd',
     screenshoots: ['/img/1.png', '/img/2.png', '/img/3.png'],
     role: 'Frontend Developer',
     type: 'Full time',

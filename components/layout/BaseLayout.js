@@ -33,7 +33,9 @@ const BaseLayout = ({ children }) => {
         style={{ top: '40%' }}
       >
         {links.map((link) => (
-          <a href={link.href}>{link.component}</a>
+          <a key={link.href} href={link.href}>
+            {link.component}
+          </a>
         ))}
       </div>
       {/* 80px - navbar height */}
