@@ -28,7 +28,7 @@ const Header = () => {
   ));
 
   return (
-    <nav className="flex justify-between fixed w-full items-center top-0 border-solid border-b-2 border-black bg-white z-40">
+    <nav className="flex justify-between fixed w-full items-center top-0 border-solid border-b-2 border-black bg-white z-40 shadow-lg">
       <div className="container px-4 lg:px-0 mx-auto flex justify-between flex-col lg:flex-row">
         <div className="flex flex-1 lg:w-auto lg:justify-start items-center">
           <button
