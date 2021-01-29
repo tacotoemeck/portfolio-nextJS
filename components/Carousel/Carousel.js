@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './style.module.scss';
+import Image from 'next/image';
 
 const Carousel = ({ images }) => {
   const [currentImage, setCurrentImage] = React.useState(0);
@@ -10,10 +11,11 @@ const Carousel = ({ images }) => {
   }, {});
 
   const scrollToImage = (i) => {
+    console.log(refs[i]);
     setCurrentImage(i);
     refs[i].current.scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'nearest',
       inline: 'start',
     });
   };
@@ -56,8 +58,8 @@ const Carousel = ({ images }) => {
       <div className={style.carousel}>
         {sliderControl(true)}
         {images.map((img, i) => (
-          <div className="w-full flex-shrink-0">
-            <img ref={refs[i]} src={img} className="w-full object-contain" />
+          <div className="w-full flex-shrink-0" key={img} ref={refs[i]}>
+            <Image width="600" height="400" src={img} className="w-full object-contain" />
           </div>
         ))}
         {sliderControl()}
