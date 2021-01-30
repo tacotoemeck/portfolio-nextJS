@@ -3,9 +3,26 @@ import BaseLayout from '../../components/layout/BaseLayout';
 import Image from 'next/image';
 import ExternalLink from '../../components/ExternalLink/ExternalLink';
 import Emoji from '../../components/Emoji/Emoji';
+import Head from 'next/head';
 
 const AboutPage = () => (
   <BaseLayout>
+    <Head>
+      <title>Tom W</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="About Tom Wagner" />
+      <meta
+        name="keywords"
+        content="developer, react, react native, frontend developer, tom wagner, tomasz wagner, tomek wagner, about"
+      />
+      <meta name="og:title" content="Tom Wagner Frontend Devloper - About" />
+      <meta
+        name="og:description"
+        content="developer, react, react native, frontend developer, tom wagner, tomasz wagner, tomek wagner, about"
+      />
+      <meta name="og:image" content="/img/seoMain.jpg" />
+      <meta name="og:url" content="https://twagner.me/about" />
+    </Head>
     <div className="w-full">
       <Image
         src="/img/gdansk.png"

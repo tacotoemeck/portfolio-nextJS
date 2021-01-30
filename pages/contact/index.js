@@ -1,6 +1,7 @@
 import React from 'react';
 import BaseLayout from '../../components/layout/BaseLayout';
 import axios from 'axios';
+import Head from 'next/head';
 
 const ContactPage = () => {
   const [status, setStatus] = React.useState({
@@ -58,6 +59,22 @@ const ContactPage = () => {
   };
   return (
     <BaseLayout>
+      <Head>
+        <title>Tom W</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Contact Tom Wagner" />
+        <meta
+          name="keywords"
+          content="developer, react, react native, frontend developer, tom wagner, tomasz wagner, tomek wagner, contact me, contact, get in touch"
+        />
+        <meta name="og:title" content="Tom Wagner Frontend Devloper - Contact" />
+        <meta
+          name="og:description"
+          content="developer, react, react native, frontend developer, tom wagner, tomasz wagner, tomek wagner, contact me, contact, get in touch"
+        />
+        <meta name="og:image" content="/img/seoMain.jpg" />
+        <meta name="og:url" content="https://twagner.me/contact" />
+      </Head>
       <main className="container mx-auto pb-16 px-4 md:px-32 lg:px-48 xl:px-64 flex flex-col items-center">
         <h1 className="AbrilFat py-8 md:pt-16 flex items-center  text-2xl">Get in touch</h1>
         <form className="w-full max-w-lg" onSubmit={handleOnSubmit}>

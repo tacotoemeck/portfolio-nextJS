@@ -1,6 +1,7 @@
 import React from 'react';
 import BaseLayout from '../components/layout/BaseLayout';
 import Image from 'next/image';
+import Head from 'next/head';
 import ReactTyped from 'react-typed';
 import style from './style.module.scss';
 
@@ -8,10 +9,26 @@ const Home = () => {
   return (
     <BaseLayout>
       <div className={style.main}>
+        <Head>
+          <title>Tom W</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Tom Wagner JavaScript, React, React Native developer" />
+          <meta
+            name="keywords"
+            content="developer, react, react native, frontend developer, tom wagner, tomasz wagner, tomek wagner"
+          />
+          <meta name="og:title" content="Tom Wagner Frontend Devloper" />
+          <meta
+            name="og:description"
+            content="developer, react, react native, frontend developer, tom wagner, tomasz wagner, tomek wagner"
+          />
+          <meta name="og:image" content="/img/seoMain.jpg" />
+          <meta name="og:url" content="https://twagner.me" />
+        </Head>
         <div className="w-full md:w-2/3 xl:w-1/2 md:px-20 px-6">
           <Image
-            className="rounded-full"
-            src="/img/profile.jpg"
+            className="rounded-2xl opacity-60"
+            src="/img/me.gif"
             alt="profile"
             height="300"
             width="300"
