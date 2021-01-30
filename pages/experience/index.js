@@ -2,10 +2,27 @@ import React from 'react';
 import Carousel from '../../components/Carousel/Carousel';
 import BaseLayout from '../../components/layout/BaseLayout';
 import experience from '../../public/content/experience';
+import Head from 'next/head';
 
 const ExperiencePage = () => {
   return (
     <BaseLayout>
+      <Head>
+        <title>Tom W</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="experience, JavaScript, React, React Native developer" />
+        <meta
+          name="keywords"
+          content="developer, react, react native, frontend developer, MatchPint"
+        />
+        <meta name="og:title" content="Tom Wagner experience" />
+        <meta
+          name="og:description"
+          content="developer, react, react native, frontend developer, tom wagner, tomasz wagner, tomek wagner, experience, portfolio"
+        />
+        <meta name="og:image" content="/img/mp3.jpg" />
+        <meta name="og:url" content="https://twagner.me/experience" />
+      </Head>
       <div className="md:py-12">
         {experience.map((exp) => (
           <ExperienceTile key={exp.company} {...exp} />
