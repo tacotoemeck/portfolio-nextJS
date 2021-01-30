@@ -2,15 +2,12 @@ import React from 'react';
 import BaseLayout from '../components/layout/BaseLayout';
 import Image from 'next/image';
 import ReactTyped from 'react-typed';
-import ReactIcon from '../components/icons/React';
-import JSIcon from '../components/icons/JS';
-import NodeIcon from '../components/icons/Node';
-import PsqlIcon from '../components/icons/PostgreSQL';
+import style from './style.module.scss';
 
 const Home = () => {
   return (
     <BaseLayout>
-      <div className="px-6 -mt-8 flex flex-col md:items-center xl:flex-row container mx-auto h-screen justify-center">
+      <div className={style.main}>
         <div className="w-full md:w-2/3 xl:w-1/2 md:px-20 px-6">
           <Image
             className="rounded-full"
@@ -27,7 +24,16 @@ const Home = () => {
               Frontend Developer
             </h2>
             <ReactTyped
-              strings={['JavaScript', 'React', 'React Native', 'NextJS', 'NodeJS', 'UX/UI']}
+              strings={[
+                'JavaScript',
+                'React',
+                'React Native',
+                'NextJS',
+                'NodeJS',
+                '...',
+                'Here to learn',
+                'Here to help',
+              ]}
               typeSpeed={70}
               backSpeed={70}
               backDelay={1000}

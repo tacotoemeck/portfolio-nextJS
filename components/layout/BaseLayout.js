@@ -25,21 +25,27 @@ const BaseLayout = ({ children }) => {
       href: 'https://www.linkedin.com/in/tomasz-wagner/',
     },
   ];
+
+  const contactLinks = links.map((link) => (
+    <a key={link.href} href={link.href}>
+      {link.component}
+    </a>
+  ));
+
   return (
     <div className="">
       <Header />
       <div
-        className="fixed hidden md:flex flex-col justify-between items-center h-40 w-12 md:w-16 z-20"
+        className="fixed hidden md:flex flex-col justify-around items-center h-64 w-12 md:w-16 z-20 bg-white opacity-80 rounded-r-xl"
         style={{ top: '40%' }}
       >
-        {links.map((link) => (
-          <a key={link.href} href={link.href}>
-            {link.component}
-          </a>
-        ))}
+        {contactLinks}
       </div>
       {/* 80px - navbar height */}
       <main style={{ marginTop: '80px' }}>{children}</main>
+      <footer className="sticky bottom-0 flex w-full md:hidden justify-around z-20 bg-white opacity-80 rounded-r-xl">
+        {contactLinks}
+      </footer>
     </div>
   );
 };

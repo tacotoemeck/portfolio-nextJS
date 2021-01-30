@@ -7,9 +7,15 @@ import Emoji from '../../components/Emoji/Emoji';
 const AboutPage = () => (
   <BaseLayout>
     <div className="w-full">
-      <Image src="/img/me.png" width={1024} height={300} layout="responsive" />
+      <Image
+        src="/img/gdansk.png"
+        width={1024}
+        height={300}
+        layout="responsive"
+        alt="panorama of Gdansk"
+      />
     </div>
-    <div className="container mx-auto pb-16 px-4 md:px-32 lg:px-48 xl:px-64">
+    <div className="container mx-auto pb-16 px-4 md:px-32 lg:px-48 xl:px-64 ">
       <h2 className="AbrilFat py-8 md:pt-16 flex items-center text-2xl">About me</h2>
       <div className="mb-16 pb-16 leading-relaxed border-solid border-b border-black">
         <p className="my-6">
@@ -30,10 +36,15 @@ const AboutPage = () => (
           developer, I had quite a bit of catching up to do. I have been dedicating my whole spare
           time on getting better at what I do. 2 years on and I still can’t see the light at the end
           of the tunnel. There’s just so much to learn and I love it! If you want to learn more
-          about my journey into tech, check the article I wrote here: LINK .
+          about my journey into tech, check the article I wrote here:
+          <ExternalLink
+            href="https://medium.com/@tacotoemeck/from-a-street-food-trader-to-getting-a-job-as-a-developer-in-10-months-amid-pandemic-f585064b3977"
+            text="medium.com"
+          />
+          .
         </p>
         <h3 className="py-4 text-lg font-bold">Main stack:</h3>
-        <p>JavaScript, React, NextJS, React Native, HTML, CSS, NodeJS, Tailwind</p>
+        <p>JavaScript, React, NextJS, React Native, Redux, HTML, CSS, NodeJS, Tailwind</p>
         <h3 className="py-4 text-lg font-bold">Secondary:</h3>
         <p>PostgreSQL, MongoDB, Express</p>
         <h3 className="py-4 text-lg font-bold">Other skills:</h3>

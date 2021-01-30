@@ -1,0 +1,4 @@
+.main {
+  @apply px-6 flex flex-col md:items-center xl:flex-row container mx-auto justify-center;
+  height: calc(100vh - 80px);
+}
