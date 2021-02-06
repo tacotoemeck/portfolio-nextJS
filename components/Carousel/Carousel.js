@@ -11,7 +11,6 @@ const Carousel = ({ images }) => {
   }, {});
 
   const scrollToImage = (i) => {
-    console.log(refs[i]);
     setCurrentImage(i);
     refs[i].current.scrollIntoView({
       behavior: 'smooth',

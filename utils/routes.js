@@ -1,1 +1,1 @@
-export default ["about", "experience", "contact"];
+export default ['about', 'experience', 'blog', 'contact'];

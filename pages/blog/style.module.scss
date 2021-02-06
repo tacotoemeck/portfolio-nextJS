@@ -1,0 +1,12 @@
+.article {
+  @apply container mx-auto pb-16 px-4 md:px-32 lg:px-48 xl:px-64;
+  > * {
+    @apply py-3;
+  }
+  > h3 {
+    @apply text-xl font-bold;
+  }
+  * a {
+    @apply text-blue-400 hover:underline hover:text-blue-900 font-bold;
+  }
+}

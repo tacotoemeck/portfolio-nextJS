@@ -32,7 +32,7 @@ const AboutPage = () => (
         alt="panorama of Gdansk"
       />
     </div>
-    <div className="container mx-auto pb-16 px-4 md:px-32 lg:px-48 xl:px-64 ">
+    <div className="container mx-auto pb-16 px-4 md:px-32 lg:px-48 xl:px-64">
       <h2 className="AbrilFat py-8 md:pt-16 flex items-center text-2xl">About me</h2>
       <div className="mb-16 pb-16 leading-relaxed border-solid border-b border-black">
         <p className="my-6">

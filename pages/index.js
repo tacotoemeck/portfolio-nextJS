@@ -27,8 +27,8 @@ const Home = () => {
         </Head>
         <div className="w-full md:w-2/3 xl:w-1/2 md:px-20 px-6">
           <Image
-            className="rounded-2xl opacity-60"
-            src="/img/me.gif"
+            className="rounded-full opacity-80"
+            src="/img/profile.jpg"
             alt="profile"
             height="300"
             width="300"
