@@ -5,6 +5,7 @@ description: 'Step by step guide to building a Tailwind React image carousel'
 summary: 'Short and tutorial on how to build an image carousel using React useRef() combined with scrollIntoView() API. All styled with Tailwind. '
 keywords: 'React Tailwind Image Carousel Slider Guide Tutorial Frontend Web Developer'
 img: '/img/sliderIMG.png'
+postID: 'imageSlider'
 ---
 
 Recently a part of the ticket I was working on, I needed to build an image carousel. Over the course of my developer journey I’ve done quite a few of them. Having said that, I think there are as many approaches to building those as there are developers doing them.
